@@ -4,5 +4,14 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"java.project.sourcePaths": [
+			"src/main/java"
+		],
+		"cSpell.words": [
+			"javagold17",
+			"enumclass",
+			"staticmodifier"
+		]
+	}
 }

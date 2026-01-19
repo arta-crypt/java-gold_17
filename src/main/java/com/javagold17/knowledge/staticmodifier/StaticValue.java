@@ -1,4 +1,4 @@
-package main.java.com.javagold17.knowledge.staticmodifier;
+package com.javagold17.knowledge.staticmodifier;
 
 /**
  * static修飾子とインスタンス変数のアクセス挙動の違いを検証するテストクラス。
