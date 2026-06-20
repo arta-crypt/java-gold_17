@@ -16,7 +16,7 @@ public class Main {
     }
 
     /**
-     * FileInput/OutputStream練習
+     * FileInputStream/FileOutputStream練習
      * 
      * @param basePath 操作するファイルのベースパス（相対パス）
      */
