@@ -1,4 +1,4 @@
-*.class
-lib/
-target/
-classes/
+.vscode
+lib
+target
+*.code-workspace
