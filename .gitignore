@@ -3,3 +3,4 @@ lib
 target
 *.code-workspace
 env.sh
+src/main/resources/files/purple/sample/chap6/data1.txt
