@@ -17,4 +17,6 @@ java -version
 ```sh
 javac ${JAVA_COMMON_OPT} -d target/classes src/main/java/com/javagold17/purple/sample/chap6/Main.java
 java -cp target/classes com.javagold17.purple.sample.chap6.Main
+# ビルドと実行一括コマンド
+javac ${JAVA_COMMON_OPT} -d target/classes src/main/java/com/javagold17/purple/sample/chap6/Main.java && java -cp target/classes com.javagold17.purple.sample.chap6.Main
 ```
