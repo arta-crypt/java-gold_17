@@ -12,22 +12,24 @@ import java.io.IOException;
  * サンプル練習
  */
 public class Main {
+    /**
+     * 操作するファイルのベースパス（相対パス）
+     */
+    private static final String BASE_PATH = "src/main/resources/files/purple/sample/chap6";
+
     public static void main(String[] args) {
-        String basePath = "src/main/resources/files/purple/sample/chap6";
         System.out.println("---- FileInputStream/FileOutputStream ----");
-        execFileIOStream(basePath);
+        execFileIOStream();
         System.out.println("---- FileRead/FileWrite ----");
-        execFileRW(basePath);
+        execFileRW();
     }
 
     /**
      * FileInputStream/FileOutputStream練習
-     * 
-     * @param basePath 操作するファイルのベースパス（相対パス）
      */
-    private static void execFileIOStream(String basePath) {
+    private static void execFileIOStream() {
         String file = "data1.txt";
-        String fullPath = basePath + "/" + file;
+        String fullPath = BASE_PATH + "/" + file;
         try (FileOutputStream fos = new FileOutputStream(fullPath);
                 FileInputStream fis = new FileInputStream(fullPath)) {
             fos.write("abcd".getBytes());
@@ -46,12 +48,10 @@ public class Main {
 
     /**
      * FileRead/FileWrite練習
-     * 
-     * @param basePath 操作するファイルのベースパス（相対パス）
      */
-    private static void execFileRW(String basePath) {
+    private static void execFileRW() {
         String file = "data2.txt";
-        String fullPath = basePath + "/" + file;
+        String fullPath = BASE_PATH + "/" + file;
         try (FileWriter fw = new FileWriter(fullPath, true);
                 FileReader fr = new FileReader(fullPath)) {
             fw.write("Writing\n");
